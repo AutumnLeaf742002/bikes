@@ -40,7 +40,7 @@ export const Login = () => {
                 <div className="w-2/3 h-2/3 bg-white shadow-md rounded-sm flex">
 
                     <section className="w-[60%] h-full">
-                        <img src="/bike.jpg" alt="bike img"
+                        <img src="bike.jpg" alt="bike img"
                             className="w-full h-full object-fill rounded-bl-sm rounded-tl-sm"
                         />
                     </section>

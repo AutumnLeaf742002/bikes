@@ -6,7 +6,7 @@ export const useCloseSession = () => {
 
     const closeSession = ()=>{
         localStorage.removeItem("user", null)
-        location.href = "/login"
+        navigate("/login")
     }
 
     return {

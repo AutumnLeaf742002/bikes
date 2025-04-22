@@ -14,9 +14,9 @@ export const RootRouter = () => {
                 <UserProvider>
                     <Routes>
                         <Route path="/*" element={<AppRoutes />} />
-                        <Route path="login" element={<Login />} />
-                        <Route path="register" element={<Register />} />
-                        <Route path="terms" element={< Terms />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/register" element={<Register />} />
+                        <Route path="/terms" element={< Terms />} />
                     </Routes>
                 </UserProvider>
             </UsersProvider>

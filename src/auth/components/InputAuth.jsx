@@ -8,7 +8,7 @@ export const InputAuth = ({ label = "no label", type = "user", name, value="", o
         <div className="flex gap-4">
 
             {
-                <img className="w-6" src={`/${getIcon()}.svg`} alt={getIcon()} />
+                <img className="w-6" src={`${getIcon()}.svg`} alt={getIcon()} />
             }
 
             <span className="relative w-full">
