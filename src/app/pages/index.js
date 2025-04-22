@@ -1,0 +1,6 @@
+export * from "./Home"
+export * from "./Terms"
+export * from "./Search"
+export * from "./Add"
+export * from "./Product"
+export * from "./Perfil"
