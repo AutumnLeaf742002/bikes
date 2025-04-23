@@ -19,7 +19,7 @@ export const useLogin = () => {
         const exist = allUsers.find(item => item.user === user && item.password === password)
 
         if (user.length <= 1 || password.length <= 1) {
-            newAlert("warning", "Los campos no pueden estar vacíos")
+            newAlert("warning", "Los campos no pueden estar vacíos!")
             return
         }
 
