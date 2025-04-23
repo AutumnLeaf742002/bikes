@@ -1,6 +1,6 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
-import { BrowserRouter } from "react-router"
+import { HashRouter } from "react-router"
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 import "./index.css"
@@ -10,8 +10,8 @@ import { RootRouter } from "./router"
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <RootRouter />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>,
 )
