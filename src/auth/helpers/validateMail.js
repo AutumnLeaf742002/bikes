@@ -3,7 +3,7 @@ export const validateMail = (mailText = "")=>{
     const mailList = [
         "@gmail",
         "@hotmail",
-        "@outlock",
+        "@outlook",
     ]
     const pointList = [
         ".com",
