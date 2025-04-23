@@ -1,18 +1,5 @@
-export const validateMail = (mailText = "")=>{
+export const validateMail = (mail = "")=>{
 
-    const mailList = [
-        "@gmail",
-        "@hotmail",
-        "@outlook",
-    ]
-    const pointList = [
-        ".com",
-        ".es",
-        ".org",
-    ]
-
-    const hasValidMail = mailList.some(mail => mailText.includes(mail))
-    const hasValidPoint = pointList.some(point => mailText.includes(point))
-
-    return hasValidMail===true&&hasValidPoint===true
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    return regex.test(mail);
 }

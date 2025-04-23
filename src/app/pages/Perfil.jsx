@@ -41,14 +41,14 @@ export const Perfil = () => {
     }
 
     return (
-        <>
+        <div>
 
             <AlertsContainer />
 
             <Dialog ref={dialogRef} text="Deseas actualizar la informacion de perfil?" callback={callback} />
 
-            <div className="w-full h-full flex justify-center">
-                <form className="w-1/3 h-2/3 mt-18 bg-white rounded-md shadow-lg p-3 flex flex-col"
+            <div className="w-full flex justify-center">
+                <form className="w-1/3 h-80 mt-18 bg-white rounded-md shadow-lg p-3 flex flex-col"
                     onSubmit={onFormSubmit}
                 >
 
@@ -73,6 +73,6 @@ export const Perfil = () => {
                     </div>
                 </form>
             </div>
-        </>
+        </div>
     )
 }

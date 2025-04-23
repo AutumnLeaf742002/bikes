@@ -1,28 +1,25 @@
-import { useContext, useState } from "react"
+import { useContext } from "react"
 
-import { AlertsContext } from "../../context"
-
-import { AlertsContainer } from "../../ui/components"
+import { AlertsContainer, Hr, Title } from "../../ui/components"
+import { Products } from "../components"
 
 
 export const Home = () => {
 
-  const { newAlert } = useContext(AlertsContext)
-
-  const [number, setNumber] = useState(1)
-
   return (
-      <>
-        <AlertsContainer />
-        <h1>
-          Home
-        </h1>
-        <button onClick={() => {
-          newAlert("success", `Alert ${number}`)
-          setNumber(number+1)
-        }}>
-          New alert
-        </button>
-      </>
+    <div className="px-2 pb-5">
+      <AlertsContainer />
+
+      <div className="flex flex-col">
+        <span className="flex justify-center items-center mt-3">
+          <Title title="Todos los productos" />
+        </span>
+        <Hr />
+
+        <span>
+          <Products />
+        </span>
+      </div>
+    </div>
   )
 }
