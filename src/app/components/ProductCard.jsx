@@ -8,7 +8,7 @@ export const ProductCard = ({ name, price, img, id }) => {
         <div className="border border-gray-300 w-78 p-2 rounded-md shadow-lg flex flex-col gap-3">
             <span>
                 <img src={imgSrc} alt={name}
-                    className="w-full"
+                    className="w-full object-cover"
                 />
             </span>
             <span className="w-full flex flex-col gap-1">
@@ -23,6 +23,9 @@ export const ProductCard = ({ name, price, img, id }) => {
                         Ver mas
                     </span>
                 </NavLink>
+                <button className="bg-green-600 text-white h-8 rounded-sm shadow-lg cursor-pointer hover:bg-green-700 transition duration-300 ease-in-out flex items-center justify-center gap-2">
+                    Agregar al carrito
+                </button>
             </span>
         </div>
     )

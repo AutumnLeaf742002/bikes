@@ -7,6 +7,7 @@ import { validateMail } from "../../auth/helpers"
 
 import { Hr, Title, Dialog, AlertsContainer } from "../../ui/components"
 import { InputAuth } from "../../auth/components"
+import { ArrowBack } from "../components"
 
 export const Perfil = () => {
 
@@ -46,6 +47,8 @@ export const Perfil = () => {
             <AlertsContainer />
 
             <Dialog ref={dialogRef} text="Deseas actualizar la informacion de perfil?" callback={callback} />
+
+            <ArrowBack />
 
             <div className="w-full flex justify-center">
                 <form className="w-1/3 h-80 mt-18 bg-white rounded-md shadow-lg p-3 flex flex-col"

@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router"
 import { useEffect } from "react"
 
 import { useValidateUserLogued } from "../../hooks"
+import { ProductsProvider } from "../../context"
 
 import { Home, Search, Add, Product, Perfil } from "../pages"
 import { Header } from "../components"
@@ -18,6 +19,7 @@ export const AppRoutes = () => {
 
     return (
         <>
+        <ProductsProvider>
             <MainPage>
                 <Header />
                 <Routes>
@@ -30,6 +32,7 @@ export const AppRoutes = () => {
                     <Route path="/product/:id" element={< Product />} />
                 </Routes>
             </MainPage>
+        </ProductsProvider>
         </>
     )
 }
