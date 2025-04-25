@@ -1,3 +1,5 @@
 export * from "./Header"
 export * from "./Products"
 export * from "./ArrowBack"
+export * from "./CartItem"
+export * from "./CartFloat"

@@ -13,13 +13,17 @@ export const Header = () => {
     const { closeSession } = useCloseSession()
     const dialogRef = useRef()
 
+    const onCloseSession = () => {
+        dialogRef.current.showModal()
+    }
+
     const callback = ()=>{
         closeSession()
     }
 
     return (
         <>
-            <Dialog ref={dialogRef} text="Seguro que desea cerrar sesión?" callback={callback} />
+            <Dialog ref={dialogRef} text="¿Seguro que desea cerrar sesión?" callback={callback} />
 
             <header className="w-full h-14 bg-neutral-900 text-white px-3 flex items-center justify-between">
                 <span>
@@ -40,9 +44,7 @@ export const Header = () => {
                         {userLogued?.user}
                     </NavLink>
                     <button className="cursor-pointer hover:underline hover:text-red-600 underline-offset-2 transition"
-                        onClick={()=>{
-                            dialogRef.current.showModal()
-                        }}
+                        onClick={onCloseSession}
                     >
                         Salir
                     </button>

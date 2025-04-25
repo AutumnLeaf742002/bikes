@@ -6,6 +6,7 @@ export const Menu = () => {
             <MenuItem path="/home" text="Inicio" />
             <MenuItem path="/search" text="Buscar" />
             <MenuItem path="/add" text="Agregar" />
+            <MenuItem path="/cart" text="Carrito" />
         </ul>
     )
 }
